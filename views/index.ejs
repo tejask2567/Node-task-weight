@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/cmr_logo_50.png" type="image/x-icon">
+    
+    <title>Home</title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.back{
+    position: absolute;
+    bottom: 0;
+    right: 45%;
+    
+}
+.Header{
+    height: 12%;
+    width: 100%;
+    padding: 0 20px;
+    background: rgb(9, 88, 153);
+    background-image:linear-gradient( rgb(9, 88, 153), rgb(1, 141, 255));
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 90px;
+    height: 65px;
+    cursor: pointer;
+}
+.Header-links{
+    padding: 28px ;
+    top:0;
+    right: 0 ;
+    position: absolute;
+    
+}
+.Header-links li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: large;
+    list-style-type: none;
+}
+.Header-links li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 0;
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Header-links li a:hover{
+    background-color: #ff652f;
+    border-radius: 3px;
+}
+.Drop-menu-task{
+    display: none;
+    position: absolute;
+    background-image:linear-gradient( rgb(10, 110, 192), rgb(1, 141, 255));
+    min-width: 125px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.drop-menu-item {
+    width: 100%;
+}
+
+.menu-item:hover .Drop-menu-task {
+    display: block;
+}
+.menu-item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    padding: 6px 10px;
+    display: block;
+}
+.container{
+    width:100%;
+    height: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border-radius: 2px;
+    z-index: -2;
+}
+
+/*Area of images*/
+.wrapper{
+    width: 50%;
+    display: flex;
+    animation: slide 21s infinite;
+}
+
+.img-carasoul{
+    width: 100%;
+}
+/*Animation activated by keyframes*/
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    background-image:linear-gradient(rgb(253, 130, 86), rgb(255, 101, 47));
+}
+.cc{
+    position: absolute;
+    right: 25%;
+    top:7%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <img src="img/cmr_logo_50.png" class="logo" >
+        <nav>
+            <ul class="Header-links">
+                <li><a href="Home.html">Home</a></li>
+                <li class="menu-item"><a href="#View-ask">Task</a>
+                    <ul class="Drop-menu-task">
+                        <li class="drop-menu-item"><a href="#View-task">View task</a></li>
+                        <li class="drop-menu-item"><a href="#Assign-task">Assign task</a></li>
+                        <li class="drop-menu-item"><a href="#Delete-task">Delete task</a></li>
+                    </ul>
+                </li>
+                <li><a href="#View-Staff">View Staff</a></li>
+                <li><a href="#Special-control">Special control</a></li>
+                <li><a href="#optmise-task">optmise task</a></li>
+                <li><a href="#About-me">About me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="Home">
+        <div class="container">
+            <!--Area of the images-->
+               <div class="wrapper">
+                  <img class="img-carasoul" src="/img/img1.jpeg">
+                  <img class="img-carasoul"  src="/img/img2.jpeg">
+                  <img class="img-carasoul" src="/img/img3.jpeg">
+                  <img class="img-carasoul" src="/img/img4.jpeg">
+                  <img class="img-carasoul" src="/img/img5.jpeg">
+                  <img class="img-carasoul" src="/img/img6.jpeg">
+                  <img class="img-carasoul" src="/img/img7.jpeg">
+               </div>
+            </div>
+    </div>
+    <div class="footer">
+        <div class="cc">
+        <p>Designed and Developed by: Tejas Hari S 1CR21AI056 and Tejas K 1CR21AI057</p>
+        <br></br>
+        <p>© 2023 Copyright : CMRIT- BENGALURU-37</p>
+        </div>
+    </div>
+    <p><a href="login" class="back">Back to login Page</a></p>
+</body>
+</html>
